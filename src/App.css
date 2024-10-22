@@ -1,42 +1,120 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffefcc; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  max-height: 4050px;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 2000px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.menu {
+  background-color: #ffcc00; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu h2 {
+  text-align: center;
+  color: #d32f2f; 
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #323228;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item span {
+  font-size: 18px;
+  color: #333333;
+}
+
+.menu-item button {
+  background-color: #d32f2f; 
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #c62828; 
+}
+
+.order {
+  background-color: #e8e8e8; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.order h2 {
+  text-align: center;
+  color: #d32f2f;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-item span {
+  font-size: 18px;
+  color: #333333;
+}
+
+.order-total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+  color: #333333;
+}
+
+.payment {
+  margin-top: 20px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.payment button {
+  background-color: #4caf50; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payment button:hover {
+  background-color: #388e3c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.payment-message {
+  font-size: 18px;
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 10px;
 }
