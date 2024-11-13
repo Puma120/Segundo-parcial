@@ -1,3 +1,128 @@
+/* Estilos para el Header */
+header {
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-title a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.header-button {
+  background-color: #ffffff;
+  color: #1f2937;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-button:hover {
+  background-color: #d1d5db; /* Gris claro al hacer hover */
+}
+
+/* Estilo del LoginForm */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faebd7;
+}
+
+.login-box {
+  width: 350px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937; /* Gris oscuro */
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-message {
+  background-color: #ffe5e5;
+  border: 1px solid #ff9494;
+  color: #d32f2f;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #d30ae2;
+  margin-top: 8px;
+}
+
+.button-container {
+  margin-top: 24px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #4338ca; /* Más oscuro */
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #ffefcc; 
@@ -31,7 +156,6 @@ body {
   text-align: center;
   color: #d32f2f; 
 }
-
 
 .menu-item {
   display: flex;
